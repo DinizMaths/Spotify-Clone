@@ -7,5 +7,16 @@
 Enquanto usuário convencional, gostaria de 
 - [ ] Listar músicas por nome
 - [ ] Listar músicas por artista
+  - Criar base fictícia
+  - "Query"
+  - Criar campo para pesquisa
+    - Autocomplete
+    - Botão para pesquisar
 - [ ] Tocar música
+  - Botão de play/pause/reproduzir
+  - card com principais informações
+  - opções para adicionar em playlist
 - [ ] Selecionar algumas músicas e criar playlist
+  - Nomear playlist
+  - "Array" que contenha musicas
+  - Avançar e retornar
