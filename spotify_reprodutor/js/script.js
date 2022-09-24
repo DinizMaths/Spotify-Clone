@@ -4,6 +4,7 @@ var carregado = false;
 var play_btn = document.getElementById('play_btn');
 var pause_btn = document.getElementById('pause_btn');
 
+var barra_progresso = document.getElementsByClassName('reprodutor_controlador_progresso_2');
 
 pause_btn.addEventListener('click',(e)=>{
     e.preventDefault();
@@ -36,6 +37,12 @@ const play_musica = (arquivo) => {
     audio_reprodutor.play();
     play_btn.style.display = "none";
     pause_btn.style.display = "inline";
+
+    audio_reprodutor.addEventListener("timeupdate", () =>{
+        let progresso = parseInt((audio_reprodutor.currentTime/audio_reprodutor.duration)*100);
+        barra_progresso[0].style.width = progresso.toString() + "%";
+    })
+
 }
 
 document.querySelectorAll('.main_coluna').forEach(item => {
