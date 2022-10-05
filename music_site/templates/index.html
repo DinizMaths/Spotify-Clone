@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Spotfy_Clone</title>
+        <title>Musify</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -35,7 +35,7 @@
                         </div><!--sidebar-menu-componente-->
                         <span>Criar Playlist</span>
                     </div><!--sidebar-menu-item-->
-
+                    
                     <div class="sidebar_menu_item">
                         <!--icone criar playlist-->
                         <img src="img/musicas_curtidas.png">
@@ -45,14 +45,9 @@
                 </div><!--sidebar-menu-->
 
                 <div class="sidebar_playlists">
-                    <a href="">Personalizada</a>
-                    <a href="">Personalizada</a>
-                    <a href="">Personalizada</a>
-                    <a href="">Personalizada</a>
-                    <a href="">Personalizada</a>
-                    <a href="">Personalizada</a>                   
+                    <a href="">Personalizada</a>                 
                 </div>
-
+                <!--
                 <div class="sidebar_playlists">
                     <a href="">Personalizada</a>
                     <a href="">Personalizada</a>
@@ -70,12 +65,123 @@
                     <a href="">Personalizada</a>
                     <a href="">Personalizada</a>                   
                 </div>
+                -->
             </div><!--sidebar-capa-->
 
         </div><!--sidebar-->
 
+        <!--main-->
+        <div class="main">
+
+            <div class="main_capa">
+
+                <div class="main_linha">
+
+                    <div class="main_linha_titulo"><h2>Paradas de sucesso</h2></div>
+                    
+                    <div class="main_coluna">
+                        <img src="img/top_brasil.jpg">
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Descrição</p>
+                    </div>
+
+                    <div class="main_coluna">
+                        <img src="img/top_brasil.jpg">
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Descrição</p>
+                    </div>
+
+                    <div class="main_coluna">
+                        <img src="img/top_brasil.jpg">
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Descrição</p>
+                    </div>
+
+                    <div class="main_coluna">
+                        <img src="img/top_brasil.jpg">
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Descrição</p>
+                    </div>
+
+                    <div class="main_coluna">
+                        <img src="img/top_brasil.jpg">
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Descrição</p>
+                    </div>
+
+                    <div class="main_coluna">
+                        <img src="img/top_brasil.jpg">
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Descrição</p>
+                    </div>
+
+                    <div class="main_coluna">
+                        <img src="img/top_brasil.jpg">
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Descrição</p>
+                    </div>
+
+                    <div class="main_coluna">
+                        <img src="img/top_brasil.jpg">
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Descrição</p>
+                    </div>
+
+                    <div class="main_coluna">
+                        <img src="img/top_brasil.jpg">
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Descrição</p>
+                    </div>
+
+                    <div class="main_linha">
+
+                        <div class="main_linha_titulo"><h2>Minhas Músicas</h2></div>
+                        
+                        <div class="main_coluna" data-image="img/ncs.png" data-artist="PLEEG" data-song="Home [NCS RELEASE]" data-file="assets/home.mp3">
+                            <img src="img/ncs.png">
+                            <h3>PLEEG</h3>
+                            <p>Descrição</p>
+                        </div>
+
+                </div>
+
+            </div><!--main-capa-->
+
+        </div><!--main-->
+
+        <div class="reprodutor">
+
+            <div class="reprodutor_artista">
+
+            </div>
+
+            <div class="reprodutor_controlador">
+
+                <div class="reprodutor_controlador_botoes">
+                    <a href=""><i class="fas fa-backward"></i></a>
+                    <a id="play_btn" href="#"><i class="far fa-play-circle"></i></a>
+                    <a style="display: none;" id="pause_btn" href="#"><i class="far fa-pause-circle"></i></a>
+                    <a href=""><i class="fas fa-forward"></i></a>
+                </div>
+                <!--Barra de progresso-->
+                <div class="reprodutor_controlador_progresso">
+                    <div style="width: 0%;" class="reprodutor_controlador_progresso_2">
+                    
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <audio id="audio_reprodutor" style="position: absolute; left: 0; top: 0; z-index: -999; opacity: 0;" controls="">
+        </audio>
+
         <!--importando icones-->
         <script src="js/all.min.js"></script>
+
+        <!---->
+        <script src="js/script.js"></script>
 
     </body>
 </html>
